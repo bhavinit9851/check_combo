@@ -8,8 +8,10 @@ if(isset($_GET['id']))
 	$row_all_data['check_new1'];
 	$checked = explode(',', $row_all_data['check_new1']);
 
+
 	if(isset($_POST['update_submit']))
 	{	
+		print_r($_POST);
 		$dropdown = $_POST['person'];
 		echo $checkbox = implode(',', $_POST['hobi']);
 		echo $gender = $_POST['gender'];
